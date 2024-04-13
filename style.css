@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   font-family: Arial;
+  list-style: none;
 }
 
 body {
@@ -22,6 +23,7 @@ header {
   border-style: solid;
   border-radius: 0 0 15px 15px;
   color: whitesmoke;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
 }
 
 main {
@@ -61,9 +63,7 @@ main {
 }
 
 .show-answer {
-  border-color: rgb(53, 110, 91);
-  border-style: solid;
-  border-width: 3px;
+  border: 3px solid rgb(53, 110, 91);
   border-radius: 15px;
   padding: 20px;
   font-weight: bold;
@@ -128,4 +128,37 @@ main {
   border-color: rgb(53, 110, 91);
   border-width: 2px;
   padding: 5px;
+}
+
+footer {
+  margin-bottom: 10vh;
+}
+
+.navbar {
+  background-color: rgb(53, 110, 91);
+  width: 100%;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  justify-content: space-evenly;
+  z-index: 1;
+  border-radius: 15px 15px 0 0;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
+  padding: 0;
+  /* Wie kann ich die Icons einfärben? */
+}
+
+.home {
+  filter: invert(100%) sepia(31%) saturate(120%) hue-rotate(235deg)
+    brightness(114%) contrast(92%);
+}
+
+.flower {
+  filter: invert(100%) sepia(31%) saturate(120%) hue-rotate(235deg)
+    brightness(114%) contrast(92%);
+}
+
+.face {
+  filter: invert(100%) sepia(31%) saturate(120%) hue-rotate(235deg)
+    brightness(114%) contrast(92%);
 }
